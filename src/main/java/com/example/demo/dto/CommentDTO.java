@@ -1,5 +1,6 @@
 package com.example.demo.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;
@@ -12,4 +13,6 @@ public class CommentDTO {
     private String message;
     private String username;
 
+    @JsonIgnore
+    private String mymy;
 }
